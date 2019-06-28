@@ -1,0 +1,132 @@
+.noStockMessage{
+  display:none;
+  font-weight:bold;
+}
+
+.productContactUs{
+  text-transform: uppercase
+}
+
+.redirectButton{
+  background:{{settings.secondary_button_background}};
+  color:{{settings.secondary_button_color}};
+  padding:10px 20px;
+  display:inline-block;
+  margin:10px;
+}
+
+/*tables */
+
+.distributorTable th, .distributorTable tr, .distributorTable th:last-child, .distributorTable td:last-child{
+  text-transform:uppercase;
+}
+
+.productTable th, .productTable tr, .productTable th:last-child, .productTable td:last-child{
+  text-align:center;
+}
+
+.productTable th p{
+  text-transform: initial;
+  font-szie:13px;
+  color:black;
+}
+/* wallpaper styles */
+.wallpaperRow{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+/*contact styles */
+
+.pageCell{
+  padding:0;
+}
+
+.contactBox{
+  text-align:center;
+}
+
+.contact-page-content.rte{
+  border-bottom:1px solid black;
+  padding-bottom:20px;
+}
+
+.grid.grid--huge.contactGrid{
+  width:100%;
+  margin-left:0;
+}
+
+.mapContent > iframe{
+  width:100%;
+}
+
+/*about us styles*/
+
+.aboutBox{
+  width:49%;
+  vertical-align:bottom;
+}
+/*
+initial styles for desktop
+width
+left = parent / 2
+height
+top = (parent / 2) - (image / 2)
+*/
+#topTextImage{
+  position:absolute;
+  left:405px;
+  top:127px;
+  
+}
+#firstText{
+  margin-top:20px;
+}
+#secondText{
+  vertical-align:bottom;
+}
+
+#thirdText{
+  width:75%;
+  margin-top:20px;
+}
+
+#textImage2{
+  position:absolute;
+  left:-266px;
+  top:249px;
+}
+
+#lastImageContainer{
+  text-align:right;
+}
+
+#lastTextImage{
+  position:absolute;
+  left:228px;
+  top:142px;
+}
+
+#lastText{
+  display:inline-block;
+  width:600px;
+  text-align:left
+}
+
+.bannerImage{
+  margin-top:40px;
+}
+
+.imageParentContainer{
+  position:relative;
+}
+
+.halfText{
+  width:50%;
+}
+
+@media (min-width: 801px){
+  .wallpaperRow{
+    margin-bottom:30px;
+  }
+}
