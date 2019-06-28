@@ -1,0 +1,6 @@
+.grid{
+	width:100%;
+}
+.grid_cell{
+	display: inline-block;
+}
