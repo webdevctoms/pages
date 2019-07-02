@@ -1,6 +1,6 @@
 <div class="imageParentContainer">
 <div style="text-align: left;"><img alt="" src="//cdn.shopify.com/s/files/1/0111/5966/6788/files/Asset_8_grande.png?v=1561745344" style="float: none;" /></div>
-<div id="topTextImage"><img src="//cdn.shopify.com/s/files/1/0111/5966/6788/files/Asset_1_large.png?v=1561745292" alt="" /></div>
+<div id="topTextImage" style="text-align: left;"><img alt="" src="//cdn.shopify.com/s/files/1/0111/5966/6788/files/Asset_1_large.png?v=1561745292" style="float: none;" /></div>
 </div>
 <div class="halfText" id="firstText">
 <p><strong>– two of five Special Forces Truths</strong></p>
@@ -27,3 +27,33 @@
 </div>
 </div>
 </div>
+<script type="text/javascript">// <![CDATA[
+function HandleAbout(bottomImageID){
+	//use this image to find other important 
+	this.bottomImage = document.getElementById(bottomImageID);
+        this.windowResized();
+}
+
+HandleAbout.prototype.setWindowListener = function() {
+	window.addEventListener('resize',function(e){
+		this.windowResized(e);
+	}.bind(this),false);
+};
+
+HandleAbout.prototype.windowResized = function() {
+	//console.log(window.innerWidth);
+	if(window.innerWidth <= 1200){
+		this.bottomImage.style.left = "0";
+	}
+	else{
+		this.bottomImage.style.left = "228px";
+	}
+};
+
+function initHandler(){
+	let handler = new HandleAbout("lastTextImage");
+	handler.setWindowListener();
+}
+
+initHandler();
+// ]]></script>
