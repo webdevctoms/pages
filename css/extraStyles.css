@@ -75,7 +75,7 @@ top = (parent / 2) - (image / 2)
 */
 #topTextImage{
   position:absolute;
-  left:405px;
+  left:493px;
   top:127px;
   
 }
@@ -84,17 +84,17 @@ top = (parent / 2) - (image / 2)
 }
 #secondText{
   vertical-align:bottom;
+  width:100%;
 }
 
 #thirdText{
-  width:75%;
-  margin-top:20px;
+  width:100%;
 }
 
 #textImage2{
   position:absolute;
   left:-266px;
-  top:249px;
+  top:152px;
 }
 
 #lastImageContainer{
@@ -121,8 +121,90 @@ top = (parent / 2) - (image / 2)
   position:relative;
 }
 
+.firstImageBox{
+  display:none;
+}
+
+.secondImageBox{
+  display:none;
+}
+
+.thirdImageBox{
+  display:none;
+}
+
+.bannerImage{
+  display:none;
+}
+
 .halfText{
-  width:50%;
+  width:100%;
+}
+
+.mobileImageContainer{
+  text-align:center;
+  margin-bottom:40px;
+  margin-top:40px;
+}
+
+.deskText{
+  display:none;
+}
+
+.mobileText{
+  max-width:480px;
+  margin:auto;
+}
+
+
+/*about us enable desktop styles*/
+@media (min-width: 950px){
+  .firstImageBox{
+    display:block;
+  }
+  
+  .secondImageBox{
+    display:inline-block;
+  }
+  
+  .bannerImage{
+    display:block;
+  }
+  
+  .thirdImageBox{
+    display:block;
+  }
+  
+  .halfText{
+    width:50%;
+  }
+  
+  #secondText{
+    width:50%;
+    display:inline-block;
+  }
+  
+  #thirdText{
+    width:75%;
+    margin-top:20px;
+  }
+  
+  #mobileText3{
+    display:none;
+  }
+  
+  .mobileImageContainer{
+    display:none;
+  }
+  
+  .deskText{
+    display:inherit;
+  }
+  
+  .mobileText{
+    display:none;
+  }
+  
 }
 
 @media (min-width: 801px){
